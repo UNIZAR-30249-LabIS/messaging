@@ -9,6 +9,8 @@ You have at least two options for these examples to work:
 
 2. You can use an existing broker (for instance one in <https://www.cloudamqp.com/>). In this case you will need an environment variable named `CLOUDAMQP_URL` with the URL of that broker. If it is in cloudamqp it will be something like `export CLOUDAMQP_URL=amqp://USER_VHOST:LONG_COMPLEX_PASSWORD@spotted-monkey.rmq.cloudamqp.com/USER_VHOST` or similar.
 
+3. Of course, you need a recent Java JDK properly installed, including a properly set JAVA_HOME environment variable. If you have to update this after a failed Gradle build, you may need to restart the Gradle daemon, restart your computer or run Gradle with the `--no-daemon` option.
+
 ## Use (command line)
 Clone the project in your computer. Then go to the directory where a file named `build.gradle` is. Run `$ ./gradlew tasks` (`gradlew.bat` if you are in Windows). If everything is fine, this will download a specific version of Gradle to your computer (only the first time), and will show the available Gradle tasks in the build.
 
